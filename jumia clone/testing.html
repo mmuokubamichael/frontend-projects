@@ -1,0 +1,114 @@
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1000px;
+    background-color: black;
+    padding-top: 40px;
+   
+}
+.nav-bar1{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    background-color: rgb(237, 237, 237) ;
+    font-size: 13px;
+    
+    
+    z-index: 20;
+
+
+}
+.nav-bar1 .right{
+    display: flex;
+    cursor: pointer;
+    width: calc(100% - 500px);
+    
+    
+    flex-shrink: 0;
+}
+.nav-bar1 .left{
+    width: 450px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    color: rgb(237, 154, 0);
+    
+    
+}
+.nav-bar1 .left img{
+    background-color: rgb(237, 154, 0);
+    border: none ;
+    border-radius: 100%;
+    width: 15px;
+    margin-right: 5px;
+}
+.nav-bar1 .left img,span{
+    cursor: pointer;
+}
+
+.nav-bar1 .left span:hover{
+    text-decoration: underline;
+}
+.nav-bar1 .left img:hover ~ span{
+    text-decoration: underline;
+}
+.nav-bar1 .right div{
+    margin-right: 10px;
+    position: relative;
+}
+.nav-bar1 .right .pay:hover{
+    color: rgb(0, 183, 255);
+}
+.nav-bar1 .right div:hover{
+    color: rgb(237, 154, 0);
+}
+.nav-bar1 .right div .tooltip{
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    bottom: -40px;
+    left:50%;
+    text-wrap: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 20;
+}
+.nav-bar1 .right div:hover .tooltip{
+    opacity: 1;
+    
+}
+</style>
+<body>
+    <div class="nav-bar1">
+        <div class="left">
+            <img  src="SVG/logo2.svg" alt="">
+            <span class="nav-item-sell">Sell on Jumia</span>
+        </div>
+        <div class="right">
+            <div>
+                <span>JUMIA</span>
+                <i class='bx bx-star'></i>
+            </div>
+            <div class="pay">
+                <i class='bx bx-shield-quarter'></i>
+                <span>PAY</span>
+                <span class="tooltip">Jumia Pay</span>
+            </div>
+            <div>
+                <i class='bx bx-bowl-rice'></i>
+                <span>FOOD</span>
+                <span class="tooltip">Jumia Food</span>
+            </div>
+            <div>
+                <i class='bx bx-cable-car'></i>
+                <span>LOGISTICS</span>
+                <span class="tooltip">Jumia Logistic Service</span>
+            </div>
+        </div>
+       </div> 
+</body>
+
