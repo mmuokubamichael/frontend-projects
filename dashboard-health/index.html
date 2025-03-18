@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dashboard</title>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-flex">
+                    <div class="logo-container">
+                        <a href="#">
+                            <div><img src="images/logo.png" alt></div>
+                            <span>e-lab LIS</span>
+                        </a>
+                    </div>
+                    <div class="lab-name">
+                        <i class="material-icons open-icon">menu</i>
+                        <span class="lab-name-text">Your Laboratory Name</span>
+                    </div>
+                    <div class="user-data">
+                        <div class="notification-container">
+                            <i class="material-icons">notifications</i>
+                            <span class="notification-count">1</span>
+                        </div>
+                        <img class="profile-pic" src="images/IMG_2425.HEIC" alt>
+                        <span class="profile-name">Isaac Odinaka</span>
+                        <i class="material-icons">arrow_downward</i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="dashboard-grid">
+                    <div class="nav-section close-side-menu">
+                        <div class="top">
+                            <h3>Your Laboratory Name</h3>
+                            <i class="material-icons close-icon">cancel</i>
+                        </div>
+                        <div class="side-bar">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">apartment</i>
+                                        <span>Front Office</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">vaccines</i>
+                                        <span>Phlebotomy</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">science</i>
+                                        <span>Laboratory</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">import_contacts</i>
+                                        <span>Admin</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">motorcycle</i>
+                                        <span>Dispatch</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">two_wheeler</i>
+                                        <span>Analyzers</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">done_all</i>
+                                        <span>QC</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">payments</i>
+                                        <span>Account</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="material-icons">takeout_dining</i>
+                                        <span>Inventory</span>
+                                        <i class="material-icons down-icon">arrow_downward</i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dashboard-section">
+                        <div class="dashboard-section-title">
+                            <div class="page-name">
+                                <h3>Drug Prescription Page</h3>
+                            </div>
+                            <div class="pagination">
+                                <a href="#">home</a>
+                                <i class="material-icons">arrow_forward</i>
+                                <a href="#">page 1</a>
+                                <i class="material-icons">arrow_forward</i>
+                                <a class="active-page" href="#">page 2</a>
+                            </div>
+                        </div>
+                        <div class="dashboard-section-nav">
+                            <ul>
+                                <li class="active"><a href="#">Vital Signs</a></li>
+                                <li><a href="#">Presenting Complain</a></li>
+                                <li><a href="#">Diagnosis</a></li>
+                                <li><a href="#">Plan</a></li>
+                                <li><a href="#">Charges</a></li>
+                                <li><a href="#">Payments</a></li>
+                                <li><a href="#">Prescriptions</a></li>
+                                <li><a href="#">Medications</a></li>
+                            </ul>
+                        </div>
+                        <div class="dashboard-table">
+                            <h4>Prescribed Drugs</h4>
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>S/N</th>
+                                            <th>Medicine Name</th>
+                                            <th>Strength</th>
+                                            <th>Interval/Duration</th>
+                                            <th>Instruction</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><p>Tab Emzor Paracetamol  250mg</p> <small class="badge">Arthemeter</small></td>
+                                            <td>250mg</td>
+                                            <td>QDS/7 days</td>
+                                            <td>1 Morning, one night for 7 days</td>
+                                            <td class="remove-td"><small class="remove">Remove</small></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td><p>Tab Emzor Paracetamol  250mg</p> <small class="badge">Arthemeter</small></td>
+                                            <td>250mg</td>
+                                            <td>QDS/7 days</td>
+                                            <td>1 Morning, one night for 7 days</td>
+                                            <td class="remove-td"><small class="remove">Remove</small></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td><p>Tab Emzor Paracetamol  250mg</p> <small class="badge">Arthemeter</small></td>
+                                            <td>250mg</td>
+                                            <td>QDS/7 days</td>
+                                            <td>1 Morning, one night for 7 days</td>
+                                            <td class="remove-td"><small class="remove">Remove</small></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                           
+                        </div>
+                        <form action="#">
+                        <div class="dashboard-form-section">
+                            
+                                <div class="form-group medicine-brand">
+                                    <label for="medicine-brand">Search Medicine brand</label>
+                                    <input type="text" placeholder="search medicine brand" id="medicine-brand">
+                                    <div class="form-list-search">
+                                        <ul>
+                                            <li>
+                                                <p>Emzor Paracetamol Tab 250mg</p>
+                                                <small> (10 sachet left)</small>  
+                                            </li>
+                                            <li>
+                                                <p>Emzor Paracetamol Tab 250mg</p>
+                                                <small> (10 sachet left)</small>  
+                                            </li>
+                                            <li>
+                                                <p>Emzor Paracetamol Tab 250mg</p>
+                                                <small> (10 sachet left)</small>  
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group interval">
+                                    <label for="interval">Interval</label>
+                                    <input type="text" id="interval" placeholder="Enter  interval">
+                                    <div class="form-list-search">
+                                        <ul>
+                                            <li>
+                                                <p>Emzor Paracetamol Tab 250mg</p>
+                                                <small> (10 sachet left)</small>  
+                                            </li>
+                                            <li>
+                                                <p>Emzor Paracetamol Tab 250mg</p>
+                                                <small> (10 sachet left)</small>  
+                                            </li>
+                                            <li>
+                                                <p>Emzor Paracetamol Tab 250mg</p>
+                                                <small> (10 sachet left)</small>  
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group instruction">
+                                    <label for="instruction">Special Instruction</label>
+                                    <input type="text" id="instruction" placeholder="enter instruction">
+                                </div>
+                                <div class="form-group duration">
+                                    <label for="duration">Duration</label>
+                                    <input type="text" id="duration" placeholder="enter duration">
+                                </div>
+                                <div class="form-group add">
+                                    <label class="add-label" for="add">add</label>
+                                    <button id="add" type="submit">add</button>
+                                </div>
+
+                            
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-wrapper">
+                <div class="footer-nav">
+                    <ul>
+                        <li class="footer-nav-link"><a href="#">About Us</a></li>
+                        <li class="footer-nav-link"><a href="#">Contact Us</a></li>
+                        <li class="footer-nav-link"><a href="#">Terms of Service</a></li>
+                        <li class="footer-nav-link"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="copy-right">
+                    <p>e-Lab LIS by Netwalkers NG (c) 2022. All right reserved</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="styles.js"></script>
+    </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid</title>
+    </head>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+        
+    }
+    img{
+        max-width: 100%;
+    }
+    
+    .container{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    
+    .one{
+        grid-row: 1/3;
+        padding: 3rem 0;
+        background: hsl(31, 66%, 93%);
+        border-radius: 5px;
+    }
+    .one img{
+        width: 100%;
+    }
+    .five{
+        grid-row: 3/5;
+        grid-column: 1/2;
+        background: hsl(39, 100%, 71%);
+        border-radius: 5px;
+        padding: 3rem 0;
+    }
+    .two{
+        grid-column: span 2;
+        background: hsl(256, 67%, 59%);
+        color: #ffff;
+        padding: 3rem 0;
+        border-radius: 5px;
+    }
+    .two img{
+        width: 100px;
+    }
+
+    .two .container{
+        text-align: center;
+    }
+
+    .three{
+        grid-row: span 3;
+        background: hsl(254, 88%, 90%);
+        padding: 3rem 0;
+        border-radius: 5px;
+    }
+    /* .three img{
+        width: 90%;
+        float: right;
+    } */
+    .four{
+        grid-row: span 2;
+        background: hsl(0, 100%, 97%);
+        padding: 3rem 0;
+        border-radius: 5px;
+    }
+    .six{
+        grid-row: span 2;
+        background: hsl(39, 100%, 71%);
+        padding: 3rem 0;
+        border-radius: 5px;
+    }
+
+    .six img{
+        width: 100px;
+    }
+
+    .seven{
+        background: hsl(0, 100%, 97%);
+        padding: 3rem 0;
+        border-radius: 5px;
+    }
+    .eight{
+        grid-column: span 2;
+        background: hsl(256, 67%, 59%);
+        color: #ffff;
+        padding: 3rem 0;
+        border-radius: 5px;
+    } 
+    .eight .container{
+        display: flex;
+        gap: 10px;
+    }
+    .eight .container div{
+        width: 50%;
+    }
+    .eight .container h1{
+        width: 50%;
+    }
+    
+    
+</style>
+    <body>
+
+        <div class="grid">
+            <div class="col one">
+                <div class="container">
+                    <h2>Create and schedule content <span>quicker</span>.</h2>
+                    <img src="images/illustration-create-post.webp" alt>
+                </div>
+
+            </div>
+            <div class="col two">
+                <div class="container">
+                    <h1>Social Media 10x Faster with AI</h1>
+                    <img src="images/illustration-five-stars.webp" alt>
+                    <p>over 4,000 5-star reviews</p>
+                </div>
+
+            </div>
+            <div class="col three">
+                <div class="container">
+                    <h2>Schedule to social media.</h2>
+
+                    <img src="images/illustration-schedule-posts.webp" alt>
+                    <p>
+                        Optimize post timings to publish content at the perfect
+                        time for you audience
+                    </p>
+                </div>
+            </div>
+            <div class="col four">
+                <div class="container">
+                    <img src="images/illustration-multiple-platforms.webp" alt="">
+                    <h2>Manage multiple accounts and platforms.</h2>
+                </div>
+            </div>
+            <div class="col five">
+                <div class="container">
+                    <h2>Write your content using AI.</h2>
+                    <img src="images/illustration-ai-content.webp" alt="">
+                </div>
+            </div>
+            <div class="col six">
+                <div class="container">
+                    <h2>Maintain a consistent posting schedule.</h2>
+                    <img src="images/illustration-consistent-schedule.webp" alt="">
+                </div>
+            </div>
+            <div class="col seven">
+                <div class="container">
+                    <h1>>56%</h1>
+                    <p>faster audience growth</p>
+                    <img src="images/illustration-audience-growth.webp" alt="">
+                </div>
+            </div>
+            <div class="col eight">
+                <div class="container">
+                    <div>
+                        <img src="images/illustration-grow-followers.webp" alt="">
+                    </div>
+                    
+                    <h1>Grow followers with non-stop content.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="grid-container">
+        <div class="item item1">Create and schedule content quicker.</div>
+        <div class="item item2">Social Media 10x Faster with AI</div>
+        <div class="item item3">Schedule to social media.</div>
+        <div class="item item4">Write your content using AI.</div>
+        <div class="item item5">Manage multiple accounts and platforms.</div>
+        <div class="item item6">Maintain a consistent posting schedule.</div>
+        <div class="item item7">>56% faster audience growth</div>
+        <div class="item item8">Grow followers with non-stop content.</div>
+      </div>
+       -->
+    </body>
+</html>

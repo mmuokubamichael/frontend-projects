@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* 6 columns for flexibility */
+      grid-auto-rows: 150px; /* Default row height */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 1rem;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    /* Specific styles for each grid item */
+    .item1 {
+      grid-column: span 2;
+      grid-row: span 2;
+      background-color: #ffeedd;
+    }
+
+    .item2 {
+      grid-column: span 4;
+      grid-row: span 2;
+      background-color: #d7c6f4;
+    }
+
+    .item3 {
+      grid-column: span 2;
+      grid-row: span 2;
+      background-color: #ffe4a1;
+    }
+
+    .item4 {
+      grid-column: span 2;
+      grid-row: span 1;
+      background-color: #fdf4cc;
+    }
+
+    .item5 {
+      grid-column: span 2;
+      grid-row: span 1;
+      background-color: #f6d7f9;
+    }
+
+    .item6 {
+      grid-column: span 2;
+      grid-row: span 1;
+      background-color: #ffdecc;
+    }
+
+    .item7 {
+      grid-column: span 4;
+      grid-row: span 2;
+      background-color: #e9d4ff;
+    }
+
+    .item8 {
+      grid-column: span 2;
+      grid-row: span 2;
+      background-color: #cbf0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="item item1">Create and schedule content quicker</div>
+    <div class="item item2">Social Media 10x Faster with AI</div>
+    <div class="item item3">Write your content using AI</div>
+    <div class="item item4">Manage multiple accounts and platforms</div>
+    <div class="item item5">Maintain a consistent posting schedule</div>
+    <div class="item item6">Schedule to social media</div>
+    <div class="item item7">Grow followers with non-stop content</div>
+    <div class="item item8">Follower growth statistics</div>
+  </div>
+</body>
+</html>

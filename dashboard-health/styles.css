@@ -1,0 +1,480 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 95%;
+    margin: 0 auto;
+    
+}
+li{
+    list-style: none;
+}
+header{
+    box-shadow: 0px 4px 8px 0px #00000040;
+
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+.header-flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    background: #fff;
+
+}
+.header-flex .logo-container a,
+.header-flex .lab-name,
+.header-flex .user-data{
+    display: flex;
+    align-items: center;
+}
+.header-flex .logo-container{
+    flex-shrink: 0;
+}
+.header-flex .user-data{
+    gap: 10px;
+}
+.header-flex .user-data .notification-container{
+    position: relative;
+}
+.header-flex .user-data .notification-container i{
+    font-size: 30px;
+}
+.header-flex .user-data .notification-container .notification-count{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    color: #fff;
+    background: #9C3030;
+    top: 3px;
+    right: -5px;
+}
+.header-flex .logo-container a div{
+    padding: 2px 5px;
+    background: #9C3030;
+    margin-right: 5px;
+    
+}
+.header-flex .logo-container a span{
+    font-size: 10px;
+    border: #9C3030 5px solid;
+    padding: 3px 3px;
+    font-weight: bolder;
+    color: #9C3030;
+}
+.header-flex .logo-container a img{
+    background: #9C3030;
+    width: 15px;
+    border: solid 1px #fff;
+}
+.header-flex .lab-name{
+    flex: 1;
+}
+.header-flex .profile-pic{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+.header-flex .lab-name i{
+    font-size: 40px;
+    color: #5B5B5B;
+}
+.header-flex .lab-name .lab-name-text{
+    display: none;
+}
+.header-flex .profile-name{
+    display: none;
+}
+
+/* main section */
+main .dashboard-grid{
+    margin-top: 10px;
+}
+
+main .dashboard-section{
+    box-shadow: 0px 4px 8px 0px #00000040;
+    height: 75vh;
+    overflow-y: auto;
+}
+main .dashboard-section .dashboard-section-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+main .dashboard-section .dashboard-section-title .pagination{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+main .dashboard-section .dashboard-section-title h3{
+    font-size: 12px;
+}
+main .dashboard-section .dashboard-section-title .pagination a{
+    color:#C4C4C4;
+    font-size: 9px;
+}
+
+main .dashboard-section .dashboard-section-title .pagination a.active-page{
+    color: #5B5B5B;
+}
+ 
+main .dashboard-section .dashboard-section-title .pagination i{
+    font-size: 9px;
+    color:#C4C4C4;
+}
+main .nav-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    height: 100vh;
+    z-index: 4;
+    background: #fff;
+    box-shadow: 0px 4px 8px 0px #00000040;
+    transition: transform 0.4s ease-in-out; /* Smooth slide effect */
+    
+}
+
+.close-side-menu{
+    transform: translateX(-110%); /* Moves it completely off-screen */
+}
+
+main .nav-section .top .close-icon{
+    position: absolute;
+    top: 0;
+    right: -15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+main .nav-section .side-bar{
+    margin-top: 50px;
+}
+main .nav-section .side-bar ul{
+    padding: 0;
+}
+main .nav-section .side-bar ul li{
+    line-height: 3;
+    list-style: none;
+    text-align: center;
+}
+
+main .nav-section .side-bar ul li a{
+    color:#5B5B5B;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main .nav-section .side-bar ul li a span{
+    flex: 1;
+    text-align: left;
+}
+main .dashboard-section-nav ul{
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+main .dashboard-section-nav ul li{
+    list-style: none;
+    background: #AA2F2F;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+main .dashboard-section-nav ul li.active{
+    background: #fff;
+    border: #AA2F2F solid 2px;
+}
+main .dashboard-section-nav ul li.active a{
+    color: #AA2F2F;
+}
+main .dashboard-section-nav ul li a{
+    color: #fff;
+}
+
+main .dashboard-section .dashboard-table{
+    padding: 10px;
+}
+
+main .dashboard-section .dashboard-table .table-container{
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+main .dashboard-section .dashboard-table .table-container table{
+    
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+
+}
+main .dashboard-section .dashboard-table .table-container table tbody{
+    box-shadow: 0px 0px 36px 0px #00000040;
+
+}
+main .dashboard-section .dashboard-table .table-container table thead{
+    background: #F3F2F2;
+}
+
+main .dashboard-section .dashboard-table .table-container table, th, td{
+    border: 2px solid #E5E5E5;
+    border-collapse: collapse;
+}
+main .dashboard-section .dashboard-table .table-container th, td{
+    padding: 4px;
+}
+main .dashboard-section .dashboard-table .table-container table .badge, .remove{
+    padding: 2px 4px;
+    border-radius: 5px;
+    color: #fff;
+   
+}
+main .dashboard-section .dashboard-table .table-container table .badge{
+    background: #8F8989;
+}
+main .dashboard-section .dashboard-table .table-container table .remove{
+    background: #9C3030;
+}
+main .dashboard-section .dashboard-table .table-container table .remove-td{
+    text-align: center;
+}
+main .dashboard-section .dashboard-table .table-container table p{
+    margin: 5px 0;
+}
+
+main .dashboard-section .dashboard-form-section{
+    padding: 10px;
+}
+main .dashboard-section .dashboard-form-section .form-group{
+    margin-bottom: 10px;
+    position: relative;
+}
+main .dashboard-section .dashboard-form-section .form-group .form-list-search{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    top: 105%;
+    display: none;
+    box-shadow: 0px 0px 9px 2px #00000040;
+    z-index: 2;
+}
+main .dashboard-section .dashboard-form-section input{
+    width: 100%;
+    box-shadow: 0px 0px 9px 2px #00000040;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #FFFBFB;
+    border-radius: 5px;
+    font-size: 20px;
+
+
+}
+main .dashboard-section .dashboard-form-section .form-group input:focus + .form-list-search{
+    display: block;
+}
+main .dashboard-section .dashboard-form-section input::placeholder{
+    font-size: 20px;
+}
+
+main .dashboard-section .dashboard-form-section button{
+    border: 1px solid #9C3030;
+    background: #9C3030;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    
+}
+footer{
+    padding: 10px 0;
+    color: #5B5B5B;
+
+}
+footer .footer-wrapper{
+    width: 95%;
+    box-shadow: 3px 3px 4px 7px #E5E5E5;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+footer .footer-wrapper .footer-nav,.copy-right{
+    padding: 0 10px;
+}
+footer .footer-wrapper .footer-nav ul{
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    margin: 0;
+    gap: 5px;
+}
+footer .footer-wrapper .footer-nav ul li a{
+    color: #5B5B5B;
+}
+footer .footer-wrapper .copy-right{
+    text-align: center;
+}
+footer .footer-wrapper .copy-right p{
+    margin: 0;
+}
+.footer-nav-link + .footer-nav-link{
+    border-left: 2px solid #5B5B5B;
+    padding-left: 5px;
+}
+main .dashboard-section .dashboard-form-section .form-group.add label{
+    opacity: 0;
+}
+
+@media (min-width:800px) and (max-width:1000px){
+    .header-flex .lab-name .lab-name-text{
+        display: block;
+        margin: 0 auto;
+    }
+    main .dashboard-grid{
+        display: grid;
+        grid-template-columns: 50px auto;
+        gap: 10px;
+    }
+
+    main .nav-section{
+        position: relative;
+        padding: 20px 10px;
+        height: 75vh;
+        z-index: 4;
+        background: #fff;
+        box-shadow: 0px 4px 8px 0px #00000040;
+        
+        
+    }
+    main .nav-section .side-bar i{
+        line-height:2;
+    }
+    main .nav-section .side-bar span, .down-icon{
+        display: none;
+    }
+    .close-side-menu{
+        transform: none
+    }
+    main .nav-section .top{
+        display: none;
+    }
+    main .nav-section .side-bar{
+        margin-top: 10px;
+    }
+    .header-flex .lab-name i{
+        display: none;
+    }
+    footer .footer-wrapper{
+        display: flex;
+        justify-content: center;
+    
+    }
+    main .dashboard-section .dashboard-form-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.medicine-brand{
+        width: 29%;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.interval{
+        width: 25%;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.instruction{
+        width: 27%;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.duration{
+        width: 10%;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.add{
+        width: 6%;
+        
+    }
+    main .dashboard-section .dashboard-form-section .form-group.add button{
+        margin-top: 7px;
+        
+    }
+    
+}
+
+@media (min-width:1000px){
+    .header-flex .lab-name .lab-name-text{
+        display: block;
+        margin: 0 auto;
+    }
+    main .dashboard-grid{
+        display: grid;
+        grid-template-columns: 200px auto;
+        gap: 10px;
+    }
+
+    main .nav-section{
+        position: relative;
+        padding: 20px 10px;
+        height: 75vh;
+        z-index: 4;
+        background: #fff;
+        box-shadow: 0px 4px 8px 0px #00000040;
+        
+        
+    }
+    .close-side-menu{
+        transform: none
+    }
+    main .nav-section .top{
+        display: none;
+    }
+    main .nav-section .side-bar{
+        margin-top: 10px;
+    }
+    .header-flex .lab-name i{
+        display: none;
+    }
+    footer .footer-wrapper{
+        display: flex;
+        justify-content: center;
+    
+    }
+    main .dashboard-section .dashboard-form-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.medicine-brand{
+        width: 29%;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.interval{
+        width: 25%;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.instruction{
+        width: 27%;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.duration{
+        width: 10%;
+    }
+    main .dashboard-section .dashboard-form-section .form-group.add{
+        width: 6%;
+        
+    }
+    main .dashboard-section .dashboard-form-section .form-group.add button{
+        margin-top: 7px;
+        
+    }
+    
+}
